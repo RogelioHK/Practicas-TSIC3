@@ -559,4 +559,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Practica2Scene.unity
-  playerPath: C:/Users/roghe/VR/Practica2RogelioHernandez/Practica2RogelioHernandez.apk
+  playerPath: C:/Users/roghe/VR/Practicas-TSIC3/Practica2RogelioHernandez.apk
