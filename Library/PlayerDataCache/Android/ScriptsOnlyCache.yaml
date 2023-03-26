@@ -66,23 +66,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1966}
     - Class: 114
-      Script: {instanceID: 2240}
+      Script: {instanceID: 2238}
+    - Class: 114
+      Script: {instanceID: 2250}
     - Class: 114
       Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2500}
+      Script: {instanceID: 2498}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2674}
+      Script: {instanceID: 2670}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3492}
-    - Class: 114
-      Script: {instanceID: 76764}
+      Script: {instanceID: 3488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -139,19 +139,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1966}
     - Class: 114
-      Script: {instanceID: 2240}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2500}
+      Script: {instanceID: 2498}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3488}
     - Class: 114
-      Script: {instanceID: 3510}
+      Script: {instanceID: 3506}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -208,19 +208,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1966}
     - Class: 114
-      Script: {instanceID: 2240}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2500}
+      Script: {instanceID: 2498}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3488}
     - Class: 114
-      Script: {instanceID: 3510}
+      Script: {instanceID: 3506}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -279,19 +279,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1966}
     - Class: 114
-      Script: {instanceID: 2240}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2500}
+      Script: {instanceID: 2498}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 3026}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3488}
     - Class: 114
-      Script: {instanceID: 3586}
+      Script: {instanceID: 3582}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -433,6 +433,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: b9851fa85456f1fe1990bcf599c0ed34
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: videoController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -829,12 +835,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: b9851fa85456f1fe1990bcf599c0ed34
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: videoController
   platform: 13
   scenePathNames:
   - Assets/Practica3/practica3A.unity
