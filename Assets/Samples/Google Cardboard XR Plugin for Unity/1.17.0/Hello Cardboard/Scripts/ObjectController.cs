@@ -18,6 +18,8 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 /// <summary>
 /// Controls target objects behaviour.
@@ -27,12 +29,14 @@ public class ObjectController : MonoBehaviour
     /// <summary>
     /// The material to use when this object is inactive (not being gazed at).
     /// </summary>
-    public Material InactiveMaterial;
+    //public Material InactiveMaterial;
+   
 
     /// <summary>
     /// The material to use when this object is active (gazed at).
     /// </summary>
-    public Material GazedAtMaterial;
+    //public Material GazedAtMaterial;
+    public string SceneName;
 
     // The objects are about 1 meter in radius, so the min/max target distance are
     // set so that the objects are always within the room (which is about 5 meters
@@ -42,23 +46,24 @@ public class ObjectController : MonoBehaviour
     private const float _minObjectHeight = 0.5f;
     private const float _maxObjectHeight = 3.5f;
 
-    private Renderer _myRenderer;
-    private Vector3 _startingPosition;
+    //private Renderer _myRenderer;
+   // private Vector3 _startingPosition;
 
     /// <summary>
     /// Start is called before the first frame update.
     /// </summary>
     public void Start()
     {
-        _startingPosition = transform.parent.localPosition;
-        _myRenderer = GetComponent<Renderer>();
-        SetMaterial(false);
+        Debug.Log("Start program");
+        // _startingPosition = transform.parent.localPosition;
+        //_myRenderer = GetComponent<Renderer>();
+        //SetMaterial(false);
     }
 
     /// <summary>
     /// Teleports this instance randomly when triggered by a pointer click.
     /// </summary>
-    public void TeleportRandomly()
+    /*public void TeleportRandomly()
     {
         // Picks a random sibling, activates it and deactivates itself.
         int sibIdx = transform.GetSiblingIndex();
@@ -67,44 +72,49 @@ public class ObjectController : MonoBehaviour
         GameObject randomSib = transform.parent.GetChild(sibIdx).gameObject;
 
         // Computes new object's location.
-        float angle = Random.Range(-Mathf.PI, Mathf.PI);
-        float distance = Random.Range(_minObjectDistance, _maxObjectDistance);
-        float height = Random.Range(_minObjectHeight, _maxObjectHeight);
-        Vector3 newPos = new Vector3(Mathf.Cos(angle) * distance, height,
+        //float angle = Random.Range(-Mathf.PI, Mathf.PI);
+        //float distance = Random.Range(_minObjectDistance, _maxObjectDistance);
+        //float height = Random.Range(_minObjectHeight, _maxObjectHeight);
+        //Vector3 newPos = new Vector3(Mathf.Cos(angle) * distance, height,
                                      Mathf.Sin(angle) * distance);
 
         // Moves the parent to the new position (siblings relative distance from their parent is 0).
-        transform.parent.localPosition = newPos;
+        //transform.parent.localPosition = newPos;
 
-        randomSib.SetActive(true);
-        gameObject.SetActive(false);
-        SetMaterial(false);
-    }
+        //randomSib.SetActive(true);
+        //gameObject.SetActive(false);
+        //SetMaterial(false);
+    }*/
 
     /// <summary>
     /// This method is called by the Main Camera when it starts gazing at this GameObject.
     /// </summary>
     public void OnPointerEnter()
     {
-        SetMaterial(true);
+        //SetMaterial(true);
+        //Debug.Log("A la vista");
+        SceneManager.LoadScene(SceneName);
+        //LoadNewScene();
     }
+
 
     /// <summary>
     /// This method is called by the Main Camera when it stops gazing at this GameObject.
     /// </summary>
     public void OnPointerExit()
     {
-        SetMaterial(false);
+        Debug.Log("Fuera de vista");
+        //SetMaterial(false);
     }
 
     /// <summary>
     /// This method is called by the Main Camera when it is gazing at this GameObject and the screen
     /// is touched.
     /// </summary>
-    public void OnPointerClick()
+    /*public void OnPointerClick()
     {
-        TeleportRandomly();
-    }
+        //TeleportRandomly();
+    }*/
 
     /// <summary>
     /// Sets this instance's material according to gazedAt status.
@@ -113,11 +123,20 @@ public class ObjectController : MonoBehaviour
     /// <param name="gazedAt">
     /// Value `true` if this object is being gazed at, `false` otherwise.
     /// </param>
-    private void SetMaterial(bool gazedAt)
+    /*private void SetMaterial(bool gazedAt)
     {
         if (InactiveMaterial != null && GazedAtMaterial != null)
         {
             _myRenderer.material = gazedAt ? GazedAtMaterial : InactiveMaterial;
         }
-    }
+    }*/
+
+    //private void LoadNewScene(string SceneName)
+    //{
+    //    SceneManager.LoadScene(SceneName);
+    //    // Aquí se carga la nueva escena.
+    //    // Puedes utilizar el método LoadScene del SceneManager de Unity.
+    //    // SceneManager.LoadScene("nombre_de_la_escena");
+    //}
+
 }

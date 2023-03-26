@@ -13,8 +13,8 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: TeamSoft
-  productName: Practica2RogelioHernandez
-  defaultCursor: {fileID: 0}
+  productName: Practica3RogelioHernandez
+  defaultCursor: {fileID: 2800000, guid: d6e055c42ae8cee4e84a54f29f30b13a, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
